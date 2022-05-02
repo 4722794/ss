@@ -303,7 +303,7 @@ video {
   position: absolute;
   top: 0;
   left: 0;
-  filter: brightness(40%);
+  filter: brightness(80%);
 }
 
 #hero {
