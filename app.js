@@ -8,6 +8,13 @@ const menu_item = document.querySelectorAll(
 );
 const header = document.querySelector(".header.container");
 
+const phone = document.querySelector("#phone");
+const email = document.querySelector("#email");
+const address = document.querySelector("#address");
+const phoneval = document.querySelector("#phoneval");
+const emailval = document.querySelector("#emailval");
+const addressval = document.querySelector("#addressval");
+
 hamburger.addEventListener("click", () => {
   console.log(hamburger.classList);
   hamburger.classList.toggle("active");
@@ -22,3 +29,24 @@ document.addEventListener("scroll", () => {
     header.style.backgroundColor = "transparent";
   }
 });
+
+phone.addEventListener("click", (event) => {
+  event.preventDefault();
+  phoneval.innerHTML = "+91 8097334915";
+});
+
+email.addEventListener("click", (event) => {
+  event.preventDefault();
+  emailval.innerHTML = "mysportshaala@gmail.com";
+});
+
+address.addEventListener("click", (event) => {
+  event.preventDefault();
+  addressval.innerHTML = "4132, Prestige Shantiniketan, Bangalore";
+});
+
+const comingsoon = document.querySelector(".cta");
+
+setTimeout(() => {
+  comingsoon.style.visibility = "visible";
+}, 7500);
