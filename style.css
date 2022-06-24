@@ -849,6 +849,7 @@ video {
   #contact .contact-item .contact-info {
     width: 100%;
     text-align: center;
+    word-wrap: break;
     padding-left: 20px;
   }
   .contact.container .section-title {
